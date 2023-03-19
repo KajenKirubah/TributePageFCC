@@ -1,0 +1,64 @@
+.tribute {
+    margin: 0;
+    padding: 0.5rem;
+    width: 100%;
+    
+
+    @mixin atSmall {
+        padding: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.7rem;
+        margin: 0 0 2.5rem 0 ;
+        text-align: center;
+        color: $blackolive;
+
+        @mixin atSmall {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        width: 100%;
+        margin: auto;
+
+        @mixin atSmall {
+            width: 450px;
+        }
+
+        @mixin atMedium {
+            width: 600px;
+        }
+    }
+
+    &__text > li {
+        line-height: 1.6;
+        margin-bottom: 1.8rem;
+        list-style-type: none;
+
+        @mixin atSmall {
+            list-style-type: initial;
+        }
+    }
+
+    &__quote {
+        width: 100%;
+        margin: 2.5rem auto 3.5rem auto;
+        font-size: 1.7rem;
+        font-family: 'Segoe UI', 'Helvetica Neue', 'Roboto';
+
+        @mixin atSmall {
+            font-size: 1.8rem;
+            width: 450px;
+            font-weight: 100;
+            color: $blackolive;
+            margin: 2.5rem auto 5.5rem auto;
+        }
+
+        @mixin atMedium {
+            width: 600px;
+        }
+    }
+}

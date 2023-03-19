@@ -1,0 +1,7 @@
+.wrapper {
+    background-color: #e7e7e7;
+    
+    @mixin atSmall {
+        padding: 1rem 0.5rem;
+    }
+}

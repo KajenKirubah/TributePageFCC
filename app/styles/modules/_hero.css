@@ -1,0 +1,29 @@
+.hero {
+    background-color: #fff;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+
+    @mixin atSmall {
+        padding: 2rem;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+
+        @mixin atSmall {
+            max-width: 1020px;
+        }
+    }
+
+    &__caption {
+        padding: 1.2rem 0 0 0;
+        font-size: 1.2rem;
+
+        @mixin atSmall {
+            font-size: 1.4rem;
+        }
+    }
+}
